@@ -40,6 +40,6 @@ tips = sns.load_dataset("tips")
 #-------------------------#
 
 plt.figure(figsize = (8, 5))
-sns.lmplot(data = tips, x = "total_bill", y = "tip", hue = "sex")
+sns.lmplot(data = tips, x = "total_bill", y = "tip", hue = "smoker", col = "day", order = 2) # order = 2 -> represent curved line 
 plt.title("Linear Regression of total bill and tip by Smoker")
 plt.show()
